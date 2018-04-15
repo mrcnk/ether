@@ -10,6 +10,7 @@ colors = {
   yellow: #feca57,
   steel-grey-light: #D6DBE6,
   dark-grey: #1e1e1e,
+  grey: #4A4A4A,
   prime-steel: #222f3e
 }
 
@@ -18,6 +19,12 @@ colors = {
 */
 body-background-color ?= colors.white
 body-color ?= colors.dark-grey
+
+/**
+* Exports (use only those variables outside)
+*/
 primary-color ?= colors.prime-blue
 secondary-color ?= colors.prime-steel
 base-border-color ?= colors.steel-grey-light
+text-color ?= colors.grey
+white-color ?= colors.white

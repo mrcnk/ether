@@ -1,0 +1,11 @@
+.button
+  @extend button
+
+  +m('small')
+    padding (button-vertical-padding - button-padding-step) button-horizontal-padding
+
+  +m('large')
+    padding (button-vertical-padding + button-padding-step) button-horizontal-padding
+
+  +m('primary')
+    background-color primary-color
