@@ -2,6 +2,7 @@ _header
   font-weight font-weight-bold
   font-family secondary-font-family
 
+// Some high school maths
 sizing-progression(n)
   2 - ((n - 1) / 2)
 
@@ -14,12 +15,11 @@ set-header-sizing(font-size)
  * @example <h1>Example title header</h1>
  */
 for i in (1..3)
-  h{i},
-  .h{i}
+  h{i}
     @extend _header
     set-header-sizing(sizing-progression(i))
 
-h4,
-h5,
-h6
+restOfHeaders = 'h4,h5,h6'
+
+{restOfHeaders}
   @extend h3
