@@ -1,3 +1,7 @@
+set-outline(border-color)
+  set-border-with-radius(border-color)
+  background-color transparent
+
 .button
   @extend button
 
@@ -9,3 +13,28 @@
 
   +m('primary')
     background-color primary-color
+    color white-color
+
+  +m('secondary')
+    background-color secondary-color
+    color white-color
+
+  +m('safe')
+    background-color safe-color
+    color white-color
+
+  +m('warning')
+    background-color warning-color
+    color white-color
+
+  +m('danger')
+    background-color danger-color
+    color white-color
+
+  +m('fullwidth')
+    display block
+    width 100%
+    text-align center
+
+  +m('outline')
+    set-outline(common-color)
