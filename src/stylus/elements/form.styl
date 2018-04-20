@@ -1,4 +1,6 @@
-input, select, textarea
+input-types = 'text' 'password' 'email'
+
+input-prototype()
   set-border-with-radius(base-border-color)
   clear-appearence()
   width 100%
@@ -6,7 +8,17 @@ input, select, textarea
   font-size 1rem
   max-width 100%
 
-input, select
+input:not([type]),
+select,
+textarea
+  input-prototype()
+
+for type in input-types
+  input[type={type}]
+    input-prototype()
+
+input,
+select
   height 2.75rem
 
 input
