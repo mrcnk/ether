@@ -1,8 +1,26 @@
-input
+input, select, textarea
   set-border-with-radius(base-border-color)
+  clear-appearence()
   width 100%
-  height 2.75rem
   margin-bottom .5rem
   font-size 1rem
-  padding 1rem
   max-width 100%
+
+input, select
+  height 2.75rem
+
+input
+  padding 1rem
+
+select
+  padding 0 1rem
+  background-image:
+    url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+  background-repeat no-repeat
+  background-position-x right
+  background-position-y 50%
+
+textarea
+  min-height 8rem
+  padding 1rem
+  line-height 1.5rem
