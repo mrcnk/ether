@@ -7,10 +7,12 @@ set-outline(border-color)
   @extend button
 
   +m('small')
-    padding (button-vertical-padding - button-padding-step) button-horizontal-padding
+    padding:
+      (button-vertical-padding - button-padding-step) (button-horizontal-padding - button-padding-step)
 
   +m('large')
-    padding (button-vertical-padding + button-padding-step) button-horizontal-padding
+    padding:
+      (button-vertical-padding + button-padding-step) (button-horizontal-padding + button-padding-step)
 
   +m('primary')
     background-color primary-color
