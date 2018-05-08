@@ -8,18 +8,18 @@ input-prototype()
   font-size 1rem
   max-width 100%
 
+default-input()
+  input-prototype()
+  height 2.75rem
+
 input:not([type]),
 select,
 textarea
-  input-prototype()
+  default-input()
 
 for type in input-types
   input[type={type}]
-    input-prototype()
-
-input,
-select
-  height 2.75rem
+    default-input()
 
 input
   padding 1rem

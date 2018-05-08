@@ -3,6 +3,11 @@ set-outline(border-color)
   border-width 2px
   background-color transparent
 
+add-outline(outline-color, font-color = secondary-color)
+  &-outline
+    set-outline(outline-color)
+    color font-color
+
 .button
   @extend button
 
@@ -18,39 +23,31 @@ set-outline(border-color)
     background-color primary-color
     color white-color
 
-    &-outline
-      set-outline(primary-color)
+    add-outline(primary-color)
 
   +m('secondary')
     background-color secondary-color
     color white-color
 
-    &-outline
-      set-outline(secondary-color)
+    add-outline(secondary-color)
 
   +m('safe')
     background-color safe-color
     color white-color
 
-    &-outline
-      set-outline(safe-color)
-      color safe-color
+    add-outline(safe-color, safe-color)
 
   +m('warning')
     background-color warning-color
     color white-color
 
-    &-outline
-      set-outline(warning-color)
-      color warning-color
+    add-outline(warning-color, warning-color)
 
   +m('danger')
     background-color danger-color
     color white-color
 
-    &-outline
-      set-outline(danger-color)
-      color danger-color
+    add-outline(danger-color, danger-color)
 
   +m('fullwidth')
     display block
