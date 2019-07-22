@@ -3,5 +3,8 @@
     "comment-parser": "^0.5.0",
     "file-system": "^2.2.2",
     "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }

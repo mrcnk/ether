@@ -22,31 +22,38 @@ add-outline(outline-color, font-color = secondary-color)
   +m('primary')
     background-color primary-color
     color white-color
-
     add-outline(primary-color)
+
+    &:hover
+      box-shadow 0 .25rem .375rem rgba(primary-color, 0.25)
+
+    &:active
+      box-shadow 0 .25rem .375rem rgba(primary-color, 0.5)
 
   +m('secondary')
     background-color secondary-color
     color white-color
-
     add-outline(secondary-color)
+
+    &:hover
+      box-shadow 0 .25rem .375rem rgba(secondary-color, 0.25)
+
+    &:active
+      box-shadow 0 .25rem .375rem rgba(secondary-color, 0.5)
 
   +m('safe')
     background-color safe-color
     color white-color
-
     add-outline(safe-color, safe-color)
 
   +m('warning')
     background-color warning-color
     color white-color
-
     add-outline(warning-color, warning-color)
 
   +m('danger')
     background-color danger-color
     color white-color
-
     add-outline(danger-color, danger-color)
 
   +m('fullwidth')

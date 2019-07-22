@@ -6,5 +6,10 @@ button
   color text-color
   padding button-vertical-padding button-horizontal-padding
   font-size 1rem
-  font-weight 700
   margin-bottom .5rem
+  transition-property box-shadow, transform
+  transition-duration base-animation-duration
+  transition-timing-function ease-out
+
+  &:focus
+    outline none
